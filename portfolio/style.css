@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.Menu{
+    padding: 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    position: sticky;
+    top:0;
+    
+}
+.details p{
+    min-height: 3px;
+}
+.Menu h1{
+    color: #ffff69;
+    user-select: none;
+}
+.sidenav ul li{
+    display:inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+.sidenav a{
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+
+}
+.sidenav a:hover{
+    color:grey;
+    /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+}
+
+.details{
+    margin-left: 8%;
+    margin-top: 15%;
+
+}
+.details h1{
+    font-size: 50px;
+    color:#212121;
+    margin-bottom: 20px;
+}
+
+.details p{
+    color:#212121;
+    line-height: 22px;
+}
+.details a{
+    background-color: #212121;
+    padding: 10px 10px;
+    color:whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 3px;
+
+}
+.image img{
+    width:45%;
+    height:80%;
+    position:absolute;
+    right:70px;
+    bottom:0px;
+    transition: 1s;
+    
+}
+.details h1{
+    width:0ch;
+    white-space: nowrap;
+    overflow:hidden;
+    border-right: 2px solid black;
+    animation:typing 8s infinite;
+}
+@keyframes typing{
+    0%{
+        width:0ch;
+    }
+    50%{
+        width:19ch;
+    }
+}
+.audio audio{ 
+    position:absolute;
+    left:100px;
+    bottom:0px;
+    
+}
+.audio:hover{
+    background-color: #212121;
+}
+
+
+.image img:hover{
+    position: absolute;
+    right:100px;
+}
+.btn{
+    position:absolute;
+    top:16px;
+    right:16px;
+    height:30px ;
+    width:30px;
+    display:none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bar{
+    height:2px;
+    /* width:100%; */
+    background-color: white;
+
+}
+@media (max-width:600px){
+    .btn{
+        display:flex;
+    }
+    .sidenav{
+        display: none;
+        width:100%;
+    }
+    .active{
+        display: flex;
+    }
+    .Menu{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .sidenav ul{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+    }
+    
+    
+    
+}
+
