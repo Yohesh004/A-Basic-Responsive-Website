@@ -52,15 +52,34 @@
     line-height: 22px;
 }
 .details a{
-    background-color: #212121;
     padding: 10px 10px;
-    color:whitesmoke;
+    border: 1px solid black;
+    color:black;
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
     margin: 30px 0;
     border-radius: 3px;
+     position: relative;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 
+}
+.layer{
+    background-color: black;
+    width:0;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    border-radius: 3px;
+    z-index: -1;
+}
+.details a:hover{
+    color:white;
+}
+.details a:hover .layer{
+    width:100%;
+    transition: 1s;
 }
 .image img{
     width:45%;
